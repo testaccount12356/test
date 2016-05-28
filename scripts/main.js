@@ -1,5 +1,7 @@
 var AM = new AssetManager();
 var gameEngine = new GameEngine();
+var canvas = document.getElementById("gameWorld");
+var ctx = canvas.getContext("2d");
 
 function loadAssets() {
     AM.queueSound("foot_steps", "./sounds/foot_steps.wav");
@@ -28,13 +30,19 @@ function loadAssets() {
     AM.queueDownload("./images/energyBar.png");
     AM.queueDownload("./images/naruto_headshots.png");
     AM.queueDownload("./images/visual_effects.png");
-
+    loadingUI();
 	AM.downloadAll(startGame);
 }
 
+function loadingUI() {
+    ctx.font = "25px Arial";
+    ctx.fillStyle = "rgba(255,255,0,1)";
+    ctx.textAlign = "center";
+    this.ctx.fillText("Loading", ctx.width / 2, ctx.height / 2);
+}
+
 function startGame() {
-	var canvas = document.getElementById("gameWorld");
-	var ctx = canvas.getContext("2d");
+
     var muteBtn = document.getElementById("mute-btn");
     muteBtn.addEventListener("click", function(event) {
         gameEngine.isMuted = !gameEngine.isMuted;

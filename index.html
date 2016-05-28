@@ -9,26 +9,12 @@
     <link rel="stylesheet" href="./style/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="./style/layout.css">
-
-    <script type="text/javascript" src="./scripts/entity.js"></script>
-    <script type="text/javascript" src="./scripts/animation.js"></script>
-    <script type="text/javascript" src="./scripts/player.js"></script>
-    <script type="text/javascript" src="./scripts/soundmanager2-nodebug-jsmin.js"></script>
-    <script type="text/javascript" src="./scripts/gameEngine.js"></script>
-    <script type="text/javascript" src="./scripts/assetManager.js"></script>
-    <script type="text/javascript" src="./scripts/main.js"></script>
 </head>
 
 <body onload="loadAssets()">
     <div class="container-fluid">
         <div class="row">
-            <canvas class="col-lg-9 col-md-9 col-sm-9 col-xs-9" id="gameWorld" width="1000" height="600">
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
-                        <span class="sr-only">45% Complete</span>
-                    </div>
-                </div>
-            </canvas>
+            <canvas class="col-lg-9 col-md-9 col-sm-9 col-xs-9" id="gameWorld" width="1000" height="600"></canvas>
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                 <span class="title">Controls</span>
 
@@ -61,5 +47,12 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/entity.js"></script>
+    <script type="text/javascript" src="./scripts/animation.js"></script>
+    <script type="text/javascript" src="./scripts/player.js"></script>
+    <script type="text/javascript" src="./scripts/soundmanager2-nodebug-jsmin.js"></script>
+    <script type="text/javascript" src="./scripts/gameEngine.js"></script>
+    <script type="text/javascript" src="./scripts/assetManager.js"></script>
+    <script type="text/javascript" src="./scripts/main.js"></script>
 </body>
 </html>
