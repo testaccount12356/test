@@ -31,14 +31,15 @@ function loadAssets() {
     AM.queueDownload("./images/naruto_headshots.png");
     AM.queueDownload("./images/visual_effects.png");
     loadingUI();
-	AM.downloadAll(startGame);
+	//AM.downloadAll(startGame);
 }
 
 function loadingUI() {
-    ctx.font = "25px Arial";
+    ctx.font = "60px Arial";
     ctx.fillStyle = "rgba(255,255,0,1)";
     ctx.textAlign = "center";
-    this.ctx.fillText("Loading", ctx.width / 2, ctx.height / 2);
+    ctx.fillText("Loading...", ctx.canvas.width / 2, ctx.canvas.height / 2);
+    console.log(ctx.height);
 }
 
 function startGame() {
