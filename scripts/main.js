@@ -31,7 +31,7 @@ function loadAssets() {
     AM.queueDownload("./images/naruto_headshots.png");
     AM.queueDownload("./images/visual_effects.png");
     loadingUI();
-	//AM.downloadAll(startGame);
+	AM.downloadAll(startGame);
 }
 
 function loadingUI() {
