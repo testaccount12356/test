@@ -1,0 +1,50 @@
+* {
+    font-size: 1.2vw;
+}
+
+html {
+    margin:20px;
+}
+
+canvas {
+    border: 5px solid #000000;
+}
+
+div.row {
+    margin-top: 20px;
+}
+
+div.sound-controls {
+    margin-left: 10px;
+}
+
+#gameWorld {
+    background-color: black;
+    padding: 0px;
+}
+
+span.title {
+    font-size: 1.8em;
+    font-weight: bold;
+    display: block;
+    margin: 10px;
+}
+
+span.controls {
+    font-size: 1.2em;
+    text-decoration: underline;
+    display: block;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+button {
+    font-size: 1.2em;
+}
+
+ul.control-list {
+    list-style-type: none;
+}
+
+
+

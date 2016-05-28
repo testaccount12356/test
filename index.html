@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>RUN FOR YOUR LIFE!</title>
+
+    <link rel="stylesheet" href="./style/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./style/layout.css">
+
+    <script type="text/javascript" src="./scripts/entity.js"></script>
+    <script type="text/javascript" src="./scripts/animation.js"></script>
+    <script type="text/javascript" src="./scripts/player.js"></script>
+    <script type="text/javascript" src="./scripts/soundmanager2-nodebug-jsmin.js"></script>
+    <script type="text/javascript" src="./scripts/gameEngine.js"></script>
+    <script type="text/javascript" src="./scripts/assetManager.js"></script>
+    <script type="text/javascript" src="./scripts/main.js"></script>
+</head>
+
+<body onload="loadAssets()">
+    <div class="container-fluid">
+        <div class="row">
+            <canvas class="col-lg-9 col-md-9 col-sm-9 col-xs-9" id="gameWorld" width="1000" height="600"></canvas>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <span class="title">Controls</span>
+
+                <span class="controls">Movement</span>
+                <ul>
+                    <li>D - walking to the right</li>
+                    <li>D + D - running to the right</li>
+                    <li>A - walking to the left</li>
+                    <li>A + A - running to the left</li>
+                    <li>W (idle) - jumping</li>
+                    <li>W (walking) - walking and jumping</li>
+                    <li>W (running) - running and jumping</li>
+                </ul>
+
+                <span class="controls">Skills</span>
+                <ul>
+                    <li>S - teleporting (untouchable)</li>
+                    <li>I - attacking</li>
+                    <li>O - throwing knives</li>
+                    <li>P - special attack</li>
+                </ul>
+
+                <div class="sound-controls">
+                    <button type="button" id="mute-btn" class="btn btn-default btn-lg btn-primary btn-block">
+                        <span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span><span> Mute</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</body>
+</html>
